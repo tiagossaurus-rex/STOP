@@ -10,5 +10,23 @@ export const useActions = (state, dispatch) => {
                 payload,
             });
         },
+        toggleCategory(payload) {
+            dispatch({
+                type: types.TOGGLE_CATEGORY,
+                payload,
+            });
+        },
+        toggleLetter(payload) {
+            dispatch({
+                type: types.TOGGLE_LETTER,
+                payload,
+            });
+        },
+        roundSettings(payload) {
+            dispatch({
+                type: types.ROUND_SETTINGS,
+                payload,
+            });
+        },
     }
 }

@@ -6,14 +6,14 @@ import {
     initialState,
 } from './';
 
-const AppContext = createContext(null);
+const AppContext = createContext();
 
-export const ContextProvider = props => {
+export const AppContextProvider = props => {
     const [state, dispatch] = useReducer(reducer, initialState());
     const actions = useActions(state, dispatch);
 
     useEffect(() => {
-        console.log('[state]: ', state)
+        console.log('[AppContextProvider] state: ', state)
     }, [state]);
 
     const value = {

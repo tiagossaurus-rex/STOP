@@ -1,3 +1,6 @@
-export default {
+export const types = {
     DEFAULT: 'DEFAULT',
+    TOGGLE_CATEGORY: 'TOGGLE_CATEGORY',
+    TOGGLE_LETTER: 'TOGGLE_LETTER',
+    ROUND_SETTINGS: 'ROUND_SETTINGS',
 }
